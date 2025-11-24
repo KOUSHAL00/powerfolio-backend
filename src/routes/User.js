@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const User = require('../models/User');
 const Project = require('../models/Project');
-const { protect } = require('../middleware/auth');
+const { protect } = require('../middleware/Auth');
 
 // @route   GET /api/users/profile
 // @desc    Get current user profile

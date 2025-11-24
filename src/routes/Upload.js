@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const { upload } = require('../utils/cloudinary');
-const { protect } = require('../middleware/auth');
+const { protect } = require('../middleware/Auth');
 
 // @route   POST /api/upload/image
 // @desc    Upload single image

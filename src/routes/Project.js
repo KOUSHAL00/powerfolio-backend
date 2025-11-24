@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const Project = require('../models/Project');
 const User = require('../models/User');
-const { protect } = require('../middleware/auth');
+const { protect } = require('../middleware/Auth');
 
 // @route   GET /api/projects
 // @desc    Get all approved projects (Public) with Search
