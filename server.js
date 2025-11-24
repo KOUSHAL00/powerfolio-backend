@@ -44,6 +44,8 @@ app.use((err, req, res, next) => {
 const PORT = process.env.PORT || 12000;
 
 
+module.exports = app;
+
 // Start Server after DB Connection
 connectDB().then(() => {
   app.listen(PORT, () => console.log(`✅ Server running on port ${PORT}`));
